@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha()
+	{
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase)
+	{
+		document.write(frase);
+		pulaLinha();
+	}
+
+// perguntar pro usuário o número de vitórias e empates do time dele. Prompt sempre retorna uma string, então, para que retorne um número utilizar a função parseInt(); :)
+
+	var vitorias = parseInt(prompt("Entre com o número de vitórias."));
+	var empates = parseInt(prompt("Entre com o número de empates."));
+
+// calcular os pontos do time (vitorias * 3) e (empates * 1).
+
+	var pontosDoTime = (vitorias * 3) + empates; 
+
+	mostra("Os pontos do seu time é: " + pontosDoTime);
+	
+// comparar o ano passado e com o ano atual.
+//	se pontos maior que 28
+
+		if(pontosDoTime > 28) 
+		{
+		mostra("Seu time está melhor do que o ano passado.");
+		}
+
+//	se pontos menor que 28	
+
+		if(pontosDoTime < 28)
+		{
+		mostra("Seu time está pior do que o ano passado.");
+		}
+
+//	se pontos igual a 28
+
+		if(pontosDoTime == 28)
+		{
+		mostra("Seu time está igual ao ano passado.");
+		}
+
+	mostra("FIM");
+
+</script>

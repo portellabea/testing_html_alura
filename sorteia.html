@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha()
+	{
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase)
+	{
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function sorteia(n){
+		var n = 10;
+		return Math.round(Math.random() * n);
+	}
+
+	numeroPensado = sorteia();
+	var chute = parseInt(prompt("Escolha um número!"));
+
+	if(numeroPensado==chute){
+		mostra("Você acertou! Parabéns!");
+	}
+	if(numeroPensado>chute){
+		mostra("O número que você escolheu é menor! O número correto é " + numeroPensado);
+	}
+	if(numeroPensado<chute){
+		mostra("O número que você escolheu é maior! O número correto é " + numeroPensado);
+	}
+
+</script> 
+

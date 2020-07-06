@@ -1,0 +1,23 @@
+<meta charset="UTL-8">
+
+<script>
+	
+	function pulaLinha(){
+		document.write("<br>");
+	}	
+
+	function mostra(frase){
+		document.write(frase)
+	}
+
+	var anoAtual = 2020
+	var anoDescobrimento = 1500
+	var idadePraTerFilho = 28
+	var quantidadeDeGeracao = (anoAtual - anoDescobrimento)/3
+
+	mostra("Desde 1500 até o ano atual, quantas gerações se passaram?");
+	pulaLinha();
+	mostra(Math.round(quantidadeDeGeracao));
+
+
+</script>
